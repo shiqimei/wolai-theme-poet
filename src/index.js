@@ -9,15 +9,3 @@
 // ==/UserScript==
 
 import './index.scss';
-
-(function () {
-    'use strict';
-
-    const styleSheet = document.createElement('style');
-    styleSheet.textContent = `
-html body {
-  background: green;
-}
-`.trim();
-    document.body.append(styleSheet);
-})();
