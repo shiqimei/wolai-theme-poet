@@ -1,3 +1,23 @@
 html body {
-    background: blue;
+    background: #ffffff;
+}
+
+:root {
+    --wolai-code-node-bg: #ffffff;
+}
+
+.wolai-code-wrapper {
+    border: 1px solid #e8e8eb;
+    border-radius: 5px;
+
+    $copy-more: "._1E006";
+    $lang-indicator: "._2Q6gs";
+
+    #{$copy-more},
+    #{$lang-indicator} {
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
 }

@@ -11,4 +11,11 @@ module.exports = {
             },
         ],
     },
+    devServer: {
+        contentBase: './dist',
+        hot: true,
+        https: true,
+        disableHostCheck: true,
+        writeToDisk: true
+    }
 };
