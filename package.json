@@ -1,0 +1,36 @@
+{
+  "name": "wolai-theme-poet",
+  "version": "1.0.0",
+  "description": "An elegant theme for wolai powered by ",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npx webpack --mode development --env NODE_ENV=development --watch",
+    "build": "npx webpack --mode production --env NODE_ENV=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolimay/wolai-theme-poet.git"
+  },
+  "keywords": [
+    "theme",
+    "wolai"
+  ],
+  "author": "Shiqi Mei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lolimay/wolai-theme-poet/issues"
+  },
+  "homepage": "https://github.com/lolimay/wolai-theme-poet#readme",
+  "devDependencies": {
+    "sass-loader": "^10.1.1",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "dependencies": {
+    "css-loader": "^5.0.1",
+    "sass": "^1.32.5",
+    "style-loader": "^2.0.0"
+  }
+}
