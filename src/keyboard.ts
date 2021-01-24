@@ -6,7 +6,9 @@ interface INumberDict {
 
 const keycodes: INumberDict = {
     'ArrowDown': 40,
-    'ArrowUp': 38
+    'ArrowUp': 38,
+    'ArrowLeft': 37, 
+    'ArrowRight': 39, 
 };
 
 export const Keyboard = new class {
@@ -18,7 +20,6 @@ export const Keyboard = new class {
             code: shortcut.key,
             keyCode: keycodes[shortcut.key]
         });
-        console.log('dispatched event', shortcut);
         target.dispatchEvent(event);
     }
 };
