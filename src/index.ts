@@ -1,6 +1,13 @@
 import './index.scss';
 
-console.log('Hello World!');
+import { shortcuts } from './shortcut';
+
 window.addEventListener('keydown', ev => {
-    console.log(ev.key, ev.metaKey);
+    if (!(ev instanceof KeyboardEvent)) {
+        return;
+    }
+
+    shortcuts.forEach(keyMap => {
+        console.log(keyMap);
+    });
 }, { capture: true });
