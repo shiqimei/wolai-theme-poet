@@ -3,7 +3,7 @@ interface IShortcutMap {
     to: IShortcut;
 }
 
-interface IShortcut {
+export interface IShortcut {
     ctrlKey: boolean;
     metaKey: boolean;
     altKey: boolean;
