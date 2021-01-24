@@ -1,4 +1,8 @@
 module.exports = {
+    entry: './src/index.ts',
+    resolve: {
+        extensions: ['.js', '.tsx', '.ts']
+    },
     module: {
         rules: [
             {
@@ -17,5 +21,5 @@ module.exports = {
         https: true,
         disableHostCheck: true,
         writeToDisk: true
-    }
+    },
 };
