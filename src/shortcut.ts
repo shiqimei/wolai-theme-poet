@@ -42,7 +42,7 @@ const parseShortcut = (sct: string): IShortcut => {
 
 export const shortcuts = [
     { from: 'ctrl+n', to: 'ArrowDown' },
-    { from: 'ctrl+p', to: 'ArrowUp' },
+    { from: 'ctrl+shift+p', to: 'ArrowUp' },
     { from: 'ctrl+h', to: 'ArrowLeft' },
     { from: 'ctrl+l', to: 'ArrowRight' },
 ]

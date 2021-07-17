@@ -1,13 +1,16 @@
 html body {
+    color: #2f2f2f;
     background: #ffffff;
 }
 
 :root {
-    --wolai-code-node-bg: #ffffff;
-    --wolai-code-class-name: #0089b5;
-    --wolai-code-attr-name: #dd0a43;
-    --wolai-inline-code-color: #313131;
-    --wolai-code-atrule: #8959a8;
+    --wolai-code-node-bg: #ffffff!important;
+    --wolai-code-class-name: #0089b5!important;
+    --wolai-code-attr-name: #dd0a43!important;
+    --wolai-inline-code-color: #313131!important;
+    --wolai-code-atrule: #8959a8!important;
+    --wolai-code-string: green!important;
+    --wolai-editor-header-color: #2f2f2f!important;
 }
 
 .wolai-code-wrapper {
@@ -27,8 +30,29 @@ html body {
 }
 
 #wolai-sidebar {
-    background: rgba(255, 255, 255)!important;
-    &>div:first-child {
-        background: white!important;
+    background: rgba(255, 255, 255) !important;
+    & > div:first-child {
+        background: white !important;
     }
+}
+
+::-webkit-scrollbar-thumb {
+    display: none !important;
+}
+
+.inline-code-node {
+    background: rgba(246, 248, 250, 1)!important;
+}
+
+a:not([href]) {
+    color: #0366d6 !important;
+    border: none;
+    &:hover {
+        color: #0366d6 !important;
+        border-color: #0366d6 !important;
+    }
+}
+
+._1kQU6 {
+    display: none !important;
 }
